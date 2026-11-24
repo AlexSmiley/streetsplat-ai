@@ -1,4 +1,11 @@
 # StreetSplat AI
+
+## Hosted frontend
+
+[Open StreetSplat AI on Vercel](https://streetsplat-ai-acme-fdd1.vercel.app)
+
+The hosted frontend requires a separately configured GPU backend (`VITE_API_URL`). Vercel authentication may be required.
+
 MVP: Google Maps location metadata + authorized perspective photos or MP4 -> Nerfstudio COLMAP processing -> Splatfacto training -> Gaussian PLY -> browser viewer. No Google imagery is fetched. Coordinates are metadata only, not georeferencing. Panorama projection, automatic imagery acquisition and SPLAT conversion are not implemented.
 
 Install Nerfstudio with CUDA, COLMAP and FFmpeg following https://docs.nerf.studio/quickstart/installation.html in a dedicated GPU environment. Ensure ns-process-data, ns-train and ns-export are on PATH.
